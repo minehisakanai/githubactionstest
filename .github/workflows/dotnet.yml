@@ -24,5 +24,5 @@ jobs:
         run: nuget restore githubactionstest.sln
 
       - name: Build
-        run: msbuild AspnetMvc48.sln /p:Configuration=Release /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:publishUrl=${{ github.workspace }}\publish /p:PrecompileBeforePublish=true /p:EnableUpdateable=false
+        run: msbuild githubactionstest.sln /p:Configuration=Release /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:publishUrl=${{ github.workspace }}\publish /p:PrecompileBeforePublish=true /p:EnableUpdateable=false
           
